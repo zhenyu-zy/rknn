@@ -2,7 +2,7 @@ RKNN Model Zoo = 2.3.2
 rknn-toolkit2 = 2.3.2
 rknn_toolkit_lite2 = 2.3.2
 RKNPU2 = 2.3.2
-ultralytics_yolov8 = 
+ultralytics_yolov8 = 8.2.82
 
 git clone https://github.com/airockchip/rknn_model_zoo.git
 git clone https://github.com/airockchip/rknn_toolkit2.git
@@ -18,8 +18,11 @@ windows端
 conda create -n yolov8 python=3.8
 conda activate yolov8
 conda install pytorch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+训练
 在pycharm中下载ultralytics,在终端中
 pip install ultralytics
+模型转换
+pip install ultralytics==8.2.82 -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 虚拟机端
 cd rknn_toolkit2
